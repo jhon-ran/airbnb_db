@@ -45,7 +45,7 @@ end
 
 # Seed for Reservation
 Listing.all.each do |listing|
-	5.times do |index|
+	10.times do |index|
 		index = index - 5
 		length = rand(5)
 		start_date = Time.now + ((index)*5).day

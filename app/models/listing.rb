@@ -16,4 +16,13 @@ class Listing < ApplicationRecord
   length: { minimum: 140 }
 
   validates :welcome_message, presence: true
+
+  def overlaping_reservation?(datetime)
+    overlaping_reservation = false
+    self.reservations.each do |reservation|
+      overlaping_reservation = true if reservation.start_date < datetime and reservation.end_date > datetime 
+    end
+    overlaping_reservation
+  end
+  
 end
