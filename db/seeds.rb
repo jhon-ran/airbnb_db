@@ -25,9 +25,10 @@ end
   User.create!(
     email: Faker::Internet.email,
     phone_number: "+33666666677",
-    description: Faker::Lorem.paragraph(sentence_count: 25)
+    description: Faker::Quote.famous_last_words
   )
 end
+
 
 # Seed for Listing
 50.times do 
