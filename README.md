@@ -1,24 +1,19 @@
-# README
+# Airbnb database (sort of)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+4 tables with their seeds. Each table is pre-loaded with some registries but you can generate more if needed. Do ``bundle install`` before starting the program.
 
 * Ruby version
 
-* System dependencies
+2.5.1
 
-* Configuration
+* Rails version
 
-* Database creation
+5.2.4
 
 * Database initialization
 
-* How to run the test suite
+DB is already loaded with some data. If want more, just `rails db:seed` in root to load seeds.
 
-* Services (job queues, cache servers, search engines, etc.)
+* How to run the test & visualize db
 
-* Deployment instructions
-
-* ...
+Use `rails console` to see databases. Use `tp NameTable.all` to select a specific database to visualize as table. Otherwise use usual queries. 
