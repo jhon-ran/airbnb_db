@@ -35,7 +35,7 @@ end
   Listing.create(
     available_beds: rand(1..5),
     price: rand(10..100),
-    description: Faker::Lorem.paragraph(sentence_count: 15),
+    description: Faker::Lorem.paragraph(sentence_count: 5),
     has_wifi: Faker::Boolean.boolean,
     welcome_message: "Greetings from your next accomodations",
     city: City.all.sample,
